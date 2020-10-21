@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="zastava" src="Zastava.png" alt="">
+	<nav id="navbar">
+        <ul>
+            <img src="Logo.png" class="logo">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="Nastupi.html">Nastupi</a></li>
+            <li><a href="Diskografija.html">Diskografija</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <img src="yt.png" id="insta" onclick="prof(1)">
+            <img src="insta.png" id="insta" onclick="prof(2)">
+        </ul>
+    </nav>
+<!-- padajuci -->
+    <div class="padajuci">
+        <img src="Logo.png" onclick="responzivni_meni()" class="logo_dugme">
+        <div id="padajuci_meni" class="meni">
+          <a href="index.html">Početna</a>
+          <a href="Nastupi.html">Nastupi</a>
+          <a href="Diskografija.html">Diskografija</a>
+          <a href="Galerija.html">Galerija</a>
+          <a href="Kontakt.html">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="prvi">
+        <h1>KONTAKT</h1>
+        <form name="kontakt_forma">
+                <fieldset>
+                    <legend>Kontakt</legend>
+                    <p>Ostavite vaše ime i prezime*</p>
+                    <input type="text" id="ime" placeholder="Ime i prezime...">
+                    <p>Ostavite vaš kontakt*</p>
+                    <input type="e-mail" id="kontakt"  placeholder="Kontakt...">
+                    <p>Poruka</p>
+                    <textarea rows="4" cols="50" placeholder="Ostavite vašu poruku..."></textarea>
+                    <table>
+                        <tr>
+                            <td><input type="submit" id="opacity" value="Pošalji" onmouseover="prozirnost(0)" onmouseout="prozirnost(1)" onclick="sacuvaj()">
+                            </td>
+                            <td><input type="reset" id="opacity" value="Reset" onmouseover="prozirnost(0)" onmouseout="prozirnost(1)"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+        </form>
+        <div id="kontakti"></div>
+        <script src="javasc.js"></script>
+    </div>
+</body>
+</html>
